@@ -53,7 +53,7 @@
       <!--ADVANTAGES-->
       <section class="andvantages">
         <div class="container">
-          <h2 class="hidden">Наше предложение</h2>
+          <h2 class="visually-hidden">Наше предложение</h2>
           <ul class="advantages-list">
             <li class="advantages-list-item list icon-aerial">
               <h3 class="advantages-list-title">Внимание к деталям</h3>
@@ -407,7 +407,7 @@
         <form action="#" method="get" class="modal-form">
           <label class="modal-field">Имя
             <span class="modal-field-wrapper">
-              <input type="text" name="name" class="modal-input"/>
+              <input type="text" class="modal-input" name="name"/>
             <svg width ="12" height ="12" class="modal-form-svg">
               <use href="./images/sprite.svg#modal-name"></use>
             </svg>
@@ -415,7 +415,7 @@
           </label>
           <label class="modal-field">Телефон
             <span class="modal-field-wrapper">
-              <input type="tel" name="phone" class="modal-input"/>
+              <input type="tel" class="modal-input" name="phone"/>
             <svg width ="13" height ="13" class="modal-form-svg">
               <use href="./images/sprite.svg#modal-phone"></use>
             </svg>
@@ -423,15 +423,16 @@
           </label>
           <label class="modal-field">Почта
            <span class="modal-field-wrapper">
-            <input type="email" name="e-mail" class="modal-input"/>
+            <input type="email" class="modal-input" name="e-mail"/>
             <svg width ="15" height ="12" class="modal-form-svg">
               <use href="./images/sprite.svg#modal-envelope"></use>
             </svg>
            </span>
           </label>
           <label class="modal-comment-field" for="modal-comment">Комментарий</label>
-          <textarea class="modal-comment" name="modal-comment" id="modal-comment" ></textarea>
-          <input type="checkbox" value="accepted policy"><span>Соглашаюсь с рассылкой и принимаю Условия договора</span>
+          <textarea class="modal-comment" id="modal-comment" placeholder="Введите текст" name="modal-comment"></textarea>
+          <input class="modal-policy-input visually-hidden" type="checkbox" value="accepted-policy" id="modal-policy" name="accepted-policy">
+          <label class="modal-policy-field" for="modal-policy">Соглашаюсь с рассылкой и принимаю <a href="" class="modal-policy link">Условия договора</a></label>
           <button type="submit" class="modal-btn-submit">Отправить</button>
         </form>
       </div>
