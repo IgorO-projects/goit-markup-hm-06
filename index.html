@@ -388,9 +388,9 @@
           </ul>
         </div>
         <div class="sign-to-news">
-          <form class="sign-form" action="#">
+          <form class="sign-form" action="#" method="get">
             <label class="sign-label" for="sign-input">Подпишитесь на рассылку</label>
-            <input type="email" class="sign-input" placeholder="E-mail" id="sign-input">
+            <input type="email" class="sign-input" name="email" placeholder="E-mail" id="sign-input">
             <button class="sign-btn" type="submit">Подписаться</button></form>
         </div>
       </div>
@@ -403,9 +403,39 @@
             <use href="./images/sprite.svg#icon-closex"></use>
           </svg>
         </button>
-
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <form action="#" method="get" class="modal-form">
+          <label class="modal-field">Имя
+            <span class="modal-field-wrapper">
+              <input type="text" name="name" class="modal-input"/>
+            <svg width ="12" height ="12" class="modal-form-svg">
+              <use href="./images/sprite.svg#modal-name"></use>
+            </svg>
+            </span>
+          </label>
+          <label class="modal-field">Телефон
+            <span class="modal-field-wrapper">
+              <input type="tel" name="phone" class="modal-input"/>
+            <svg width ="13" height ="13" class="modal-form-svg">
+              <use href="./images/sprite.svg#modal-phone"></use>
+            </svg>
+            </span>
+          </label>
+          <label class="modal-field">Почта
+           <span class="modal-field-wrapper">
+            <input type="email" name="e-mail" class="modal-input"/>
+            <svg width ="15" height ="12" class="modal-form-svg">
+              <use href="./images/sprite.svg#modal-envelope"></use>
+            </svg>
+           </span>
+          </label>
+          <label class="modal-comment-field" for="modal-comment">Комментарий</label>
+          <textarea class="modal-comment" name="modal-comment" id="modal-comment" ></textarea>
+          <input type="checkbox" value="accepted policy"><span>Соглашаюсь с рассылкой и принимаю Условия договора</span>
+          <button type="submit" class="modal-btn-submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
-</html>
+  </html>
