@@ -709,7 +709,6 @@ img {
 }
 .modal-policy {
   color: var(--accent-color);
-  text-decoration: underline;
 }
 .modal-btn-submit {
   align-self: center;
