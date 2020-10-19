@@ -568,6 +568,7 @@ img {
   color: var(--main-text-color);
 }
 /* ============ END PORTFOLIO ============ */
+
 /* ================ MODAL ================ */
 .backdrop {
   position: fixed;
@@ -731,13 +732,20 @@ img {
   height: 15px;
   border: 2px solid #000000;
   border-radius: 2px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .modal-policy-input:checked + .modal-policy-field::before {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   background-image: url(../images/svg/modal-accept.svg);
 }
+.modal-policy-input:focus + .modal-policy-field::before,
+.modal-policy-input:hover + .modal-policy-field::before {
+  border-color: var(--accent-color);
+} 
 /* ============== END MODAL ============== */
+
 /* ============= COMPONENTS ============== */
 .list {
   list-style: none;
